@@ -1,0 +1,53 @@
+/* the below is used for taking the entire space
+so that we have all the ui to use */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif;
+}
+.hero__section{
+    background:url(./images/heroSectionBackground.png);
+    min-height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 16px 0px 0px 20px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar__menu_container{
+    display: flex;
+    align-self:center;
+    gap: 20px;
+}
+.navbar__menu_container .user__icon{
+    display: flex;
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border:dotted 1px white;
+}
+@media screen and (max-width:600px){
+    .navbar__menu_container .link{
+        display: none;
+    }
+    .hero__section{
+        min-height: 500px;
+    }
+}
+h3{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+font-style: italic;
+}

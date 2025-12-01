@@ -33,7 +33,8 @@
   </head>
   <body>
     <!-- we will have more sections in future so we have enclosed it with a class -->
-<section class="hero__section">
+<!-- this is the upper or start of the UI, it contains the hero section-->
+    <section class="hero__section">
       <header>   
      <nav class="navbar">
         <!-- since it is a single line we have not wraped up it with div -->
@@ -63,7 +64,7 @@
     <input class="hero__section_input2" type="text" placeholder="Search for Resturants,Cuisine or Dish" class="input"/>
   </div>
     </section>
-  </body>
+  <!-- this is the middle section of the UI, so we have included the cards  -->
 <section>
 <section class="info__section">
     <div class="info__section_card">
@@ -83,9 +84,87 @@
       </div>
       <div class="info__section_card">
         <img src="./images/item4.png" alt="info section image 4" class="info__section_image"/>
-        <h3 class="info__section_headline">Cravings..?</h3>
+        <h3 class="info__section_headline">Craving Something</h3>
         <p class="info__section_para">Experience New Flavours</p>
       </div>
 </section>
 </section>
-  </html>   
+<!-- here collection is the child class and the container is the parent class so if we use container the whole stack gets influenced -->
+<section class="container_collection">
+<h1>COLLECTION</h1>  
+  <div class="subheading_collection_span">
+    <span>Explore curated lists of top restaurants,cafes,pubs in Chennai</span>
+  <span>Collections in Chennai are listed down</span>
+</div>
+  <div class="container_card_collection">
+<div class="card cards1">
+  <div class="overlay">
+    <div class="content">
+        <h4>Live Cricket Screening</h4>
+      <span>Watch Live Cricket Matches In Chennai</span>
+    </div> 
+  </div>
+</div>
+<div class="card cards2">
+  <div class="overlay">
+    <div class="content">
+        <h4>Pubs Around Chennai</h4>
+      <span>54 places have matched</span>
+    </div>
+  </div>
+</div>
+<div class="card cards3">
+  <div class="overlay">
+    <div class="content">
+        <h4>Newly Opened Restaurants</h4>
+      <span>Talapakkati.Hyderbad and much more</span>
+    </div>
+  </div>
+</div>
+<div class="card cards4">
+  <div class="overlay">
+    <div class="content">
+        <h4>Chennai Special</h4>
+      <span>Experience new flavours in Chennai</span>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- this is for the app redirection section -->
+<section class="app__section">
+  <div class="semicontainer">
+    <div class="left_side_app">
+    <img src="./images/mobileBanner.png" alt="mobile app image" class="app__section_image"/>
+    </div>
+    <div class="right_side_app">
+      <h1>Get the Zomato app</h1>
+      <p>
+      Click the button below to download the app for your device.
+      </p>
+    <div class="radio_button_app">
+    <div>
+      <input type="radio" id="label" name="download_app">
+      <label for="label" style="font-size: 17px;">Email</label>
+    </div>
+    <div>
+    <input type="radio" id="Phone" name="download_app">
+      <label for="Phone" style="font-size: 17px;">Phone</label>
+    </div>
+  </div>
+    <div class="app_section_inputs">
+      <input type="text" placeholder="Enter your email address" class="app__section_input"/>
+      <button class="app__section_button">Download App</button>
+    </div>
+    <div class="app__store_logos_container">
+      <h5>Download App From </h5>
+      <div class="app__store_logos">
+        <img src="./images/appleStore.png" alt="Apple store logo" class="app__store_logo"/>
+        <img src="./images/playStore.png" alt="Google play store logo" class="app__store_logo"/>
+      </div>
+    </div>
+   </div>
+   </div>
+</section>
+</body>
+  </html> 

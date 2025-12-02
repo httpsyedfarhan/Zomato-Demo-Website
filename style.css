@@ -261,7 +261,7 @@ letter-spacing: 0.5px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f5f5f5;
+    background-color: #f5f4f4;
     margin-top: 2rem;
     padding: 2rem 0rem;
     gap: 2rem;
@@ -327,4 +327,170 @@ letter-spacing: 0.5px;
     font-size: 16px;
     font-weight: 500;
     color: rgb(37, 7, 7);
+}
+@media only screen and (max-width:900px){
+    .app__section .semicontainer{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0px 10px;
+    }
+    .left_side_app img{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right_side_app{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* will fillout later  */
+.location_dropdown h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.Restaurants_dropdown .restaurants_select{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.Restaurants_types_dropdown .restaurant_types_select{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.Locations_dropdown .location_select{
+     padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.footer_container{
+    width: 100%;
+}
+.footer_heading_section{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer_heading_section img{
+    width: 200px;
+}
+.footer_heading_section_buttons{
+display: flex; 
+gap: 1rem;
+}
+.footer_heading_section_buttons button{
+    width: 90px;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 8px;
+}
+.footer_heading_section_buttons button:hover{
+    box-shadow: 0px 0px 10px lightgray;
+    transform: scale(1.05);
+}
+.navigation_container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    gap: 1rem;
+    padding: 3rem 0rem;
+}
+.Social_icons_container button{
+    background-color: black;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin-top: auto;
+    padding: 5px 10px;
+    border-radius: 90px;
+}
+.Social_icons_container button i{
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Social_icons_container img{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.Link_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Link_container h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+   letter-spacing: 0.5px;
+}
+.navigation_container a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+.navigation_container a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.Disclaimer{
+    color: gray;
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+@media only screen and (max-width:800px){
+    .navigation_container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .footer_heading_section{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer_heading_section img{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:300px){
+    .navigation_container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+    .footer_heading_section{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer_heading_section img{
+        margin-top: 10px;
+    }
 }

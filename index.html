@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Zomato logo in the tab -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png"
+    />
+    <!-- Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Poppins font by google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importing styles.css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Zomato Landing Page Clone </title>
+  </head>
+  <body>
+    <!-- we will have more sections in future so we have enclosed it with a class -->
+<!-- this is the upper or start of the UI, it contains the hero section-->
+    <section class="hero__section">
+      <header>   
+     <nav class="navbar">
+        <!-- since it is a single line we have not wraped up it with div -->
+        <a href="#">Get the app</a>
+        
+    <!-- to wrap everything that is located on the same line -->
+    <div class="navbar__menu_container">
+        <a href="#" class="link">Inventor Relations</a>
+        <a href="#" class="link">Resturants</a>
+        <a href="#" class="link">Login</a>
+        <a href="#" class="link">Sign Up</a>
+    <a href="#" class="user__icon">
+        <i class="fa-solid fa-user"></i>    
+    </a>
+    <!-- the last anchor tag is used bcause if i click the user icon it should redirect to somewhere else   -->
+    </div>
+     </nav>
+      </header> 
+<div>
+    <img src="./images/heroSectionLogo.png" alt="zomato logo" class="hero__section_logo" />
+    <h3 class="hero__section_headline">the #1 leading app for food delivery</h3>
+</div>
+<div class="hero__section_input_container">
+<i class="fa-solid fa-location-dot"></i>
+    <input class="hero__section_input1" type="text" placeholder="Enter your delivery location" class="input"/> 
+    <i class="fa-solid fa-house"></i>
+    <input class="hero__section_input2" type="text" placeholder="Search for Resturants,Cuisine or Dish" class="input"/>
+  </div>
+    </section>
+  <!-- this is the middle section of the UI, so we have included the cards  -->
+<section>
+<section class="info__section">
+    <div class="info__section_card">
+        <img src="./images/item1.png" alt="info section image 1" class="info__section_image"/>
+        <h3 class="info__section_headline">Order Online</h3>
+        <p class="info__section_para">You think,We Serve!</p>
+      </div>
+      <div class="info__section_card">
+        <img src="./images/item2.png" alt="info section image 2" class="info__section_image"/>
+        <h3 class="info__section_headline">Dine-In </h3>
+        <p class="info__section_para">Pre-Book It With A Click</p>
+      </div>
+      <div class="info__section_card">
+        <img src="./images/item3.png" alt="info section image 3" class="info__section_image"/>
+        <h3 class="info__section_headline">Nightlife</h3>
+        <p class="info__section_para">Clubs and Rave Party</p>
+      </div>
+      <div class="info__section_card">
+        <img src="./images/item4.png" alt="info section image 4" class="info__section_image"/>
+        <h3 class="info__section_headline">Craving Something</h3>
+        <p class="info__section_para">Experience New Flavours</p>
+      </div>
+</section>
+</section>
+<!-- here collection is the child class and the container is the parent class so if we use container the whole stack gets influenced -->
+<section class="container_collection">
+<h1>COLLECTION</h1>  
+  <div class="subheading_collection_span">
+    <span>Explore curated lists of top restaurants,cafes,pubs in Chennai</span>
+  <span>Collections in Chennai are listed down</span>
+</div>
+  <div class="container_card_collection">
+<div class="card cards1">
+  <div class="overlay">
+    <div class="content">
+        <h4>Live Cricket Screening</h4>
+      <span>Watch Live Cricket Matches In Chennai</span>
+    </div> 
+  </div>
+</div>
+<div class="card cards2">
+  <div class="overlay">
+    <div class="content">
+        <h4>Pubs Around Chennai</h4>
+      <span>54 places have matched</span>
+    </div>
+  </div>
+</div>
+<div class="card cards3">
+  <div class="overlay">
+    <div class="content">
+        <h4>Newly Opened Restaurants</h4>
+      <span>Talapakkati.Hyderbad and much more</span>
+    </div>
+  </div>
+</div>
+<div class="card cards4">
+  <div class="overlay">
+    <div class="content">
+        <h4>Chennai Special</h4>
+      <span>Experience new flavours in Chennai</span>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- this is for the app redirection section -->
+<section class="app__section">
+  <div class="semicontainer">
+    <div class="left_side_app">
+    <img src="./images/mobileBanner.png" alt="mobile app image" class="app__section_image"/>
+    </div>
+    <div class="right_side_app">
+      <h1>Get the Zomato app</h1>
+      <p>
+      Click the button below to download the app for your device.
+      </p>
+    <div class="radio_button_app">
+    <div>
+      <input type="radio" id="label" name="download_app">
+      <label for="label" style="font-size: 17px;">Email</label>
+    </div>
+    <div>
+    <input type="radio" id="Phone" name="download_app">
+      <label for="Phone" style="font-size: 17px;">Phone</label>
+    </div>
+  </div>
+    <div class="app_section_inputs">
+      <input type="text" placeholder="Enter your email address" class="app__section_input"/>
+      <button class="app__section_button">Download App</button>
+    </div>
+    <div class="app__store_logos_container">
+      <h5>Download App From </h5>
+      <div class="app__store_logos">
+        <img src="./images/appleStore.png" alt="Apple store logo" class="app__store_logo"/>
+        <img src="./images/playStore.png" alt="Google play store logo" class="app__store_logo"/>
+      </div>
+    </div>
+   </div>
+   </div>
+</section>
+<section>
+  <div class="location_dropdown">
+<h3>Explore options Near Me</h3>
+ <div class="Restaurants_dropdown">
+      <select name="restaurants" id="restaurants" class="restaurants_select">
+      <option value="Heading">Popular Cuisines Near Me</option>
+      <option value="Bilal">Bilal</option>
+      <option value="SS_Hyderabad">SS Hyderabad</option>
+      <option value="Buhari">Buhari</option>
+      <option value="ITC">ITC</option>
+    </select>
+    </div> 
+    <div class="Restaurants_types_dropdown">
+      <select name="restaurant_types" id="restaurant_types" class="restaurant_types_select">
+      <option value="restaurant_types">Restaurant Types</option>
+      <option value="cafe">Cafe</option>
+      <option value="delivery">Delivery</option>
+      <option value="dine_out">Dine-out</option>
+      </select> 
+    </div>
+  <div class="Locations_dropdown">
+    <select name="locations" id="locations" class="location_select">
+      <option value="Heading">Cities We Deliver</option>
+      <option value="chennai">Chennai</option>
+      <option value="bangalore">Bangalore</option>
+      <option value="delhi">Delhi</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="kolkata">Kolkata</option>
+      <option value="pune">Pune</option>
+      <option value="hyderabad">Hyderabad</option>
+      <option value="ahmedabad">Ahmedabad</option>
+    </select>
+  </div>
+  </div>   
+</section>
+<!-- footer section -->
+<footer class="footer_container">
+<div class="footer_heading_section">
+<img src="./images/logo.png" alt="zomato logo">
+<div class="footer_heading_section_buttons">
+  <button>
+    <img src="https://flagcdn.com/w40/in.png" alt="indian flag" style="width: 19px;">
+     INDIA
+  </button>
+  <button><i class="fa fa-globe"></i>English</button>
+</div>
+</div>
+<div class="navigation_container">
+<div class="Link_container">
+<h5>About Zomato</h5>
+<a class="navigation_container_links" href="#">Who We Are</a>
+<a class="navigation_container_links" href="#">Blog</a>
+<a class="navigation_container_links" href="#">Work With Us</a>
+<a class="navigation_container_links" href="#">Investor Relations</a>
+<a class="navigation_container_links" href="#">Report Fraud</a>
+<a class="navigation_container_links" href="#">Contact us</a>
+</div>
+
+<div class="Link_container">
+<h5>Zomaverse</h5>
+<a class="navigation_container_links" href="#">Who We Are</a>
+<a class="navigation_container_links" href="#">Blog</a>
+<a class="navigation_container_links" href="#">Work With Us</a>
+<a class="navigation_container_links" href="#">Investor Relations</a>
+<a class="navigation_container_links" href="#">Report Fraud</a>
+<a class="navigation_container_links" href="#">Contact us</a>
+</div>
+
+<div class="Link_container">
+<h5>For Restaurants</h5>
+<a class="navigation_container_links" href="#">Partner With Us</a>
+<a class="navigation_container_links" href="#">Apps For you</a>
+<br>
+<h5>For Enterprise</h5>
+<a class="navigation_container_links" href="#">Zomato For Work</a>
+</div>
+
+<div class="Link_container">
+<h5>Learn More</h5>
+<a class="navigation_container_links" href="#">Privacy</a>
+<a class="navigation_container_links" href="#">Security</a>
+<a class="navigation_container_links" href="#">Terms</a>
+<a class="navigation_container_links" href="#">Sitemap</a>
+</div>
+
+<div class="Link_container">
+<h5>Social Links</h5>
+<div class="Social_icons_container">
+<button><i class="fa-brands fa-linkedin-in"></i></button>
+<button><i class="fa-brands fa-youtube"></i></button>
+<button><i class="fa-brands fa-twitter"></i></button>
+<button><i class="fa-brands fa-facebook"></i></button>
+<button><i class="fa-brands fa-instagram"></i></button>
+<br>
+
+<img src="./images/appleStore.png" alt="applestiore logo" class="app__store_logo_footer"/>
+<img src="./images/playStore.png" alt="google play store logo" class="app__store_logo_footer"/>
+</div>
+</div>
+</div>
+<div class="Disclaimer">
+  <span>© 2025 Zomato™. All rights reserved.</span>
+  <span>Disclaimer: This is a clone of Zomato made for educational purposes only.
+</div>
+</footer>
+</body>
+  </html> 

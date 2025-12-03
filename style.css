@@ -112,7 +112,7 @@ margin-right: auto;
         display: none;
     }
     .hero__section{
-        min-height: 300px;
+        min-height: 500px;
         min-width: 600px;
     }
     .hero__section_headline{
@@ -147,18 +147,18 @@ margin-right: auto;
         display: none;
     }
     .hero__section{
-        min-height: 300px;
-        min-width: 540px;
+        min-height: 500px;
+        min-width: 600px;
     }
     .hero__section_headline{
         font-size: 20px;
-        width: 50%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto; 
         padding-top: 5px;
     }
     .hero__section_input_container{
-        width: 40%;
+        width: 73%;
         flex-direction: column;
         padding: 10px 0px 10px 0px;
         height: auto;

@@ -7,7 +7,7 @@ so that we have all the ui to use */
     font-family:"poppins",sans-serif;
 }
 .hero__section{
-    background:url(./images/heroSectionBackground.png);
+    background:url(images/heroSectionBackground.png);
     min-height: 45vh;
     background-size: cover;
     background-position: center;
@@ -218,16 +218,16 @@ cursor: pointer;
     cursor: pointer;
 }
 .cards1{
-    background-image:url(/images/collection1.jpg);
+    background-image:url(images/collection1.jpg);
 }
 .cards2{
-    background-image:url(/images/collection2.jpg);
+    background-image:url(images/collection2.jpg);
 }
 .cards3{
-    background-image:url(/images/collection3.jpg);
+    background-image:url(images/collection3.jpg);
 }
 .cards4{
-    background-image:url(/images/collection4.jpg);
+    background-image:url(images/collection4.jpg);
 }
 .overlay{
     width: 100%;
